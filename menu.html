@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Principal - Projeto Redes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .menu-container {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 60px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      text-align: center;
+      backdrop-filter: blur(8px);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .menu-container h1 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .menu-container a button {
+      padding: 14px 28px;
+      font-size: 18px;
+      background-color: #ffffff;
+      color: #1e3c72;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .menu-container a button:hover {
+      background-color: #d6e8ff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      .menu-container h1 {
+        font-size: 24px;
+      }
+
+      .menu-container a button {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <h1>Site Projeto Redes</h1>
+    <a href="pagina1.html">
+      <button>Começar!!</button>
+    </a>
+  </div>
+
+</body>
+</html>

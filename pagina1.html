@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site TD3-redes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+    }
+
+    .main-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: #ffffff10;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .protocols {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .protocol {
+      width: 160px;
+      height: 160px;
+      background: linear-gradient(145deg, #3b6cc1, #1f4d99);
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .protocol:hover {
+      transform: scale(1.05);
+    }
+
+    .protocol-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .protocol-description {
+      font-size: 13px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      max-width: 140px;
+    }
+
+    .protocol:hover .protocol-description {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-container">
+    <h1>PROTOCOLOS TD3-REDES</h1>
+
+    <div class="protocols">
+      <div class="protocol">
+        <div class="protocol-title">IP</div>
+        <div class="protocol-description">O IP define como pacotes de dados são endereçados e roteados entre dispositivos.</div>
+      </div>
+
+      <div class="protocol">
+        <div class="protocol-title">TCP</div>
+        <div class="protocol-description">TCP opera na camada de
+transporte e garante a entrega confiável de dados entre sistemas.</div>
+      </div>
+
+      <div class="protocol">
+        <div class="protocol-title">UDP</div>
+        <div class="protocol-description"> também opera na camada de transporte mas não garante a entrega confiável de dados entre sistemas.</div>
+      </div>
+
+      <div class="protocol">
+        <div class="protocol-title">SMTP</div>
+        <div class="protocol-description"> SMTP é o protocolo padrão para
+envio de e-mails na internet. Ele define as regras de transmissão.</div>
+      </div>
+
+      <div class="protocol">
+        <div class="protocol-title">DNS</div>
+        <div class="protocol-description">É responsável por traduzir nomes de domínio legíveis por humanos em endereços IP</div>
+      </div>
+
+      <div class="protocol">
+        <div class="protocol-title">IMAP</div>
+        <div class="protocol-description">O IMAP é um protocolo utilizado
+para acessar e gerenciar e-mails armazenados em servidores.</div>
+      </div>
+
+      <div class="protocol">
+        <div class="protocol-title">HTTP</div>
+        <div class="protocol-description">HTTP é o protocolo utilizado para a
+transferência de documentos de hipertexto na (World Wide Web).</div>
+      </div>
+
+      <div class="protocol">
+        <div class="protocol-title">P2P</div>
+        <div class="protocol-description">modelo descentralizado para compartilhamento direto de arquivos entre usuários, sem depender de servidores centrais.</div>
+      </div>
+    
+    <div style="text-align: center; margin-top: 40px;">
+  <a href="pagina2.html" style="text-decoration: none;">
+    <button style="
+      padding: 10px 10px;
+      font-size: 16px;
+      background-color: #ffffff;
+      color: #1f4d99;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    " onmouseover="this.style.background='#cce7ff'" onmouseout="this.style.background='#ffffff'">
+      Ir para Página 2
+    </button>
+  </a>
+</div>
+
+</div>
+    
+    </div>
+  </div>
+
+</body>
+</html>
